@@ -1,0 +1,31 @@
+$bg-white: #fff;
+$text-black: #000;
+$text-grey: #242424;
+$accent: #00FFF0;
+
+// font-family: 'Bebas Neue',
+// sans-serif;
+// font-family: 'Cantarell',
+// sans-serif;
+// font-family: 'Roboto Condensed',
+// sans-serif;
+
+%Bebas-400 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+%Cantarell-400 {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 400;
+}
+
+%Cantarell-700 {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+}
+
+%Roboto-400 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}

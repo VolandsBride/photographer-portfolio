@@ -1,0 +1,31 @@
+@import 'vars';
+@import 'reset';
+@import 'fonts';
+@import 'global';
+
+
+.header {
+  &__content {
+    color: $text-black;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  &__content-img {
+    width: 50%;
+    border-right: 1px solid $text-black;
+  }
+  &__content-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__content-text {
+    @extend %Cantarell-400;
+    font-size: 26px;
+    letter-spacing: 5px;
+    line-height: 60px;
+  }
+}

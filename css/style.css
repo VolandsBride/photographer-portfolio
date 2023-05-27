@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cantarell:wght@400;700&family=Roboto+Condensed&display=swap");
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+
+.header__content-text, .ticker__item {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+}
+
+.ticker {
+  color: #00FFF0;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  max-width: 100%;
+}
+
+.ticker__wrapper {
+  display: flex;
+}
+
+.ticker__item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 26px;
+  align-items: center;
+  padding: 20px 0;
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: ticker 15s linear infinite;
+  margin-left: 250px;
+  line-height: 60px;
+  letter-spacing: 24%;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.menu__list {
+  display: flex;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  justify-content: center;
+}
+.menu__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 80px;
+  border-right: 1px solid #000;
+  transition: all 0.3s ease-in-out;
+}
+.menu__list-item:hover {
+  background-color: #00FFF0;
+  color: #000;
+}
+.menu__list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+.menu .menu__list-link--contact {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  color: #00FFF0;
+  transition: all 0.3s ease-in-out;
+}
+.menu .menu__list-link--contact:hover {
+  background-color: #00FFF0;
+  color: #000;
+}
+.menu .menu__list-link--home {
+  border-left: 1px solid #000;
+}
+
+.title {
+  font-size: 70px;
+  letter-spacing: 8px;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+
+.header__content {
+  color: #000;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.header__content-img {
+  width: 50%;
+  border-right: 1px solid #000;
+}
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__content-text {
+  font-size: 26px;
+  letter-spacing: 5px;
+  line-height: 60px;
+}/*# sourceMappingURL=style.css.map */
