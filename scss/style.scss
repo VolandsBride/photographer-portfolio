@@ -1,29 +1,32 @@
-@import 'vars';
-@import 'reset';
-@import 'fonts';
-@import 'global';
-
+@import "vars";
+@import "reset";
+@import "fonts";
+@import "global";
 
 .header {
   &__content {
-    color: $text-black;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
   }
-  &__content-img {
+  &__content-inner {
+    background-image: url(/images/hero-img.jpg);
     width: 50%;
     border-right: 1px solid $text-black;
-    max-height: calc(100vh - 180px);
+    overflow: hidden;
+    min-height: calc(100vh - 180px);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  &__content-inner {
+  &__content-text {
+    color: $text-black;
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
-  &__content-text {
+  &__content-subtitle {
     @extend %Cantarell-400;
     font-size: 26px;
     letter-spacing: 5px;
