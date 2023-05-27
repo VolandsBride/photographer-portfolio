@@ -282,6 +282,7 @@ body {
 .header__content-img {
   width: 50%;
   border-right: 1px solid #000;
+  max-height: calc(100vh - 180px);
 }
 .header__content-inner {
   display: flex;
