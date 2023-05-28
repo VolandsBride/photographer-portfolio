@@ -318,12 +318,25 @@ body {
 }
 .works__cover {
   width: 50%;
+  min-height: calc(100vh - 80px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.works__cover--julia {
   height: 100%;
-  margin-right: 30px;
+  width: 50%;
 }
 .works__info {
+  padding-left: 30px;
   width: 50%;
   margin-top: 78px;
+}
+.works__top {
+  display: flex;
+  justify-content: space-between;
+}
+.works__links a {
+  text-decoration: none;
 }
 .works__text {
   font-size: 30px;
@@ -338,6 +351,9 @@ body {
   grid-template-columns: repeat(var(--num-cols), 1fr);
   grid-auto-rows: var(--row-height);
   gap: var(--gap);
+}
+.works__images--julia {
+  --row-height: 408px;
 }
 .works__img {
   width: 100%;

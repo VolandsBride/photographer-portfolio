@@ -40,12 +40,24 @@
   }
   &__cover {
     width: 50%;
-    height: 100%;
-    margin-right: 30px;
+    min-height: calc(100vh - 80px);
+    object-fit: cover;
+    &--julia {
+      height: 100%;
+      width: 50%;
+    }
   }
   &__info {
+    padding-left: 30px;
     width: 50%;
     margin-top: 78px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between
+  }
+  &__links a{
+    text-decoration: none;
   }
   &__text {
     @extend %Roboto-400;
@@ -62,6 +74,9 @@
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
+    &--julia {
+      --row-height: 408px;
+    }
   }
   &__img {
     width: 100%;
@@ -71,5 +86,8 @@
   .image-grid-row-2 {
     grid-row: span 2;
   }
-
+  
 }
+
+
+
